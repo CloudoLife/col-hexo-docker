@@ -107,9 +107,10 @@ Now you can open http://localhost:4000 in your browser, and check whether the si
 
 [1] [col-hexo-docker](https://github.com/CloudoLife/col-hexo-docker)
 
-[2] [Hexo - https://hexo.io/](https://hexo.io/)
+[2] [cloudolife/col-hexo - ](https://hub.docker.com/r/cloudolife/col-hexo)
 
-[3] [Docker - https://www.docker.com/](https://www.docker.com/)
+[3] [Hexo - https://hexo.io/](https://hexo.io/)
 
-[4] [Docker Compose - https://docs.docker.com/compose/](https://docs.docker.com/compose/)
+[4] [Docker - https://www.docker.com/](https://www.docker.com/)
 
+[5] [Docker Compose - https://docs.docker.com/compose/](https://docs.docker.com/compose/)
