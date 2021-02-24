@@ -3,6 +3,8 @@
 
 [col-hexo](https://github.com/CloudoLife/col-hexo-docker) is a Docker image to use Docker or Docker Compose to run Hexo.
 
+Hexo is a fast, simple & powerful blog framework. It use plugins to provide features powerful APIs for limitless extensibility. Various plugins are available to support most template engines (EJS, Pug, Nunjucks, and many others). Easily integrate with existing NPM packages (Babel, PostCSS, Less/Sass, etc).
+
 <!-- more -->
 
 ## Prerequisites
