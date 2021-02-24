@@ -4,7 +4,7 @@
 *
 
 # Now, Allowlist allow anything that's a directory, but not a file.
-# !*/
+!*/
 
 # Allowlist the file or folder
 # !NotIgnoredFile
@@ -13,9 +13,12 @@
 # Recursively allowlist its contents
 # !NotIgnoredFolder/**
 
+!.github/**
 
 !.dockerignore
 !.gitignore
+
+col-*
 
 !docker-compose.yml
 !Dockerfile
