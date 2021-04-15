@@ -5,11 +5,10 @@ services:
   # docker-compose run app bash
   # docker-compose run --service-ports app bash
   app:
-    build:
-      context: .
+    build: .
     image: cloudolife/col-hexo
     ports:
       - "4000:4000"
     # restart: on-failure
     volumes:
-      - .:/app
+      - ".:/app"

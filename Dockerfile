@@ -6,7 +6,7 @@ RUN apk add --no-cache bash git
 
 ARG WORKDIR=/app
 ARG SITE
-WORKDIR ${WORKDIR}/${SITE}}
+WORKDIR ${WORKDIR}/${SITE}
 RUN yarn \
     && yarn global add hexo-cli
 
