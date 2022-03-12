@@ -11,5 +11,3 @@
 
 # Recursively allowlist its contents
 # !NotIgnoredFolder/**
-
-yarn.lock

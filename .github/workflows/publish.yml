@@ -10,6 +10,7 @@ on:
   push:
     branches:
       - main
+      # - master
 
 jobs:
   push_to_registries:
@@ -24,7 +25,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: cloudolife/col-hexo
+          repository: ${{ secrets.DOCKER_TAG }} # cloudolife/col-hexo
           tag_with_ref: true
 
       # - name: Push to GitHub Packages
@@ -33,5 +34,5 @@ jobs:
       #     username: ${{ github.actor }}
       #     password: ${{ secrets.GITHUB_TOKEN }}
       #     registry: docker.pkg.github.com
-      #     repository: my-org/my-repo/my-image
+      #     repository: CloudoLife/cloudolife/col-hexo
       #     tag_with_ref: true

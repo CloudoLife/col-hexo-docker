@@ -7,6 +7,7 @@ services:
   app:
     build: .
     image: cloudolife/col-hexo
+    # image: cloudolife/col-hexo:node-15.9.0-alpine3.10-hexo-6.1.0
     ports:
       - "4000:4000"
     # restart: on-failure
