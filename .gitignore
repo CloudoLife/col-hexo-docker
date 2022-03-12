@@ -22,4 +22,7 @@ col-*
 
 !docker-compose.yml
 !Dockerfile
+!Makefile
 !README.md
+
+!screenshots/**

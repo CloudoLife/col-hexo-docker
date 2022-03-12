@@ -103,7 +103,7 @@ Run Hexo server.
 $ hexo s
 ```
 
-Now you can open http://localhost:4000 in your browser, and check whether the site works correctly.
+Now you can visit http://localhost:4000 in your browser, and check whether the site works correctly.
 
 ## References
 
