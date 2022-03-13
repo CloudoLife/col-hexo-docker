@@ -60,6 +60,17 @@ jobs:
           platforms: linux/amd64,linux/arm64
           # push: true
           # tags: cloudolife/col-hexo:latest
+      -
+        name: Test image
+        run: |
+          docker run --rm ${{ github.ref }}
+      -
+        name: Update repo description
+        uses: peter-evans/dockerhub-description@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: user/app
 
       # - name: Check out the repo
       #   uses: actions/checkout@v2

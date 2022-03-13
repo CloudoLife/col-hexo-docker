@@ -52,7 +52,7 @@ Run with `docker` command.
 ```shell
 $ docker build -t cloudolife/col-hexo .
 
-$ docker run -it -v $PWD:/app --rm --name col-hexo cloudolife/col-hexo bash
+$ docker run -it --name col-hexo -p 4000:4000 --rm -v ${PWD}:/app cloudolife/col-hexo bash
 ```
 
 ### Docker Compose
