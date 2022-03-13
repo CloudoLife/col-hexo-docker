@@ -1,6 +1,6 @@
 
 ARG NODE_VERSION=17.6.0-alpine3.14
-FROM node:${NODE_VERSION} as builder
+FROM --platform=$TARGETPLATFORM node:${NODE_VERSION} as builder
 
 RUN apk add --no-cache bash git
 
