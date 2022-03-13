@@ -29,11 +29,13 @@ jobs:
           images: |
             cloudolife/col-hexo
           tags: |
+            type=schedule
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
             type=sha
-
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -55,7 +57,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          # platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64,linux/arm64
           # push: true
           # tags: cloudolife/col-hexo:latest
 
