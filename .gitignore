@@ -25,4 +25,5 @@ col-*
 !Makefile
 !README.md
 
+node_modules/**
 !screenshots/**
